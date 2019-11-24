@@ -1,0 +1,7 @@
+[program:boards]
+command=/home/boards/gunicorn_start
+user=boards
+autostart=true
+autorestart=true
+redirect_stderr=true
+stdout_logfile=/home/boards/logs/gunicorn.log
